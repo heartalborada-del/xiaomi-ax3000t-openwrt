@@ -30,7 +30,7 @@ function git_sparse_clone() {
 }
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-
+sed -i '1i src-git zzz https://github.com/blueberry-pie-11/luci-app-natmap' feeds.conf.default
 # 添加额外插件
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
